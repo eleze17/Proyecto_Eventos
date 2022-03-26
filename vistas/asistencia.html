@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio HTML:Pagina de eventos</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+   
+
+</head>
+<body>
+    <header class="Encabezado" id="Encabezado">
+        <nav class="navegador">
+            <ul>
+                <li><a href="../index.html">Inicio</a> </li>
+                <li><a href="./asistencia.html">Asistencia</a></li>
+                <li><a href="./itinerario.html">Itinerario</a></li>
+                <li><a href="./donaciones.html">Donaciones</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+            </ul>
+            <div class="logo">
+                <a href="index.html">
+                     <img src="../Imagenes/Logo.png" alt="LOGO" class="logo_img" >
+                </a>    
+               
+          
+            </div>    
+        </nav>
+
+         <H1>MI EVENTO</H1>
+    </header>
+
+
+    <form action="Hola.php" method="post" style="border:double;"
+    class="formulario">
+        <fieldset>
+            <legend>ConfirmeAsistencia</legend>
+
+                <label for="nombreyapellido">Ingrese su Nombre y apellido</label>
+                <input type="text" name="nombreyapellido"> 
+                <label for="email">Ingrese su Email</label>                
+                <input type="email" name="email">
+                <label for="telefono">Ingrese su Telefono</label>                
+                <input type="number" name="telefono">
+                <br><br>
+                <label for="Asistencia">¿Como desea que lo contactemos ante una eventualidad?</label>
+                <br><br>        
+                <label for="ckemail">Email</label>
+                <input type="checkbox" name="ckemail" id="ckemail" value="Email">
+                <label for="cktelefono">Telefono</label>
+                <input type="checkbox" name="cktelefono" id="cktelefono" value="Telefono"> 
+                <br><br>
+                <label for="evento"> ¿A que evento vas asistir? </label>
+                <br><br>
+                <label for="ckfiesta"> Fiesta </label>
+                <input type="checkbox" name="ckfiesta" id="ckfiesta" value="Fiesta"> 
+                <label for="ckcivil"> Civil </label>
+                <input type="checkbox" name="ckcivil" id="ckcivil" value="Civil"> 
+                <label for="ckiglesia"> Iglesia </label>
+                <input type="checkbox" name="ckiglesia" id="ckiglesia" value="Iglesia"> 
+                
+                
+                
+                <br><br>
+                
+                
+                <input type="submit" value="Confirmar"> 
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            
+        </fieldset>
+    </form>
+
+    <form action="Hola.php" method="post" style="border:double;"
+    class="formulario">
+        <fieldset>
+            <legend>ConfirmeAsistencia</legend>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Ingrese su nombre y apellido</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+              </div>    
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Ingrese su email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+              </div>    
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Ingrese su telefono</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1">
+              </div>    
+
+  
+
+              
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">@example.com</span>
+              </div>
+              
+              <label for="basic-url" class="form-label">Your vanity URL</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+              </div>
+              
+              <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text">.00</span>
+              </div>
+              
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+              </div>
+              
+              <div class="input-group">
+                <span class="input-group-text">With textarea</span>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+              </div>
+              
+              <label for="form-check">¿Como desea que lo contactemos ante una eventualidad?</label>
+                
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Email
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                 Telefono   
+                </label>
+              </div>
+
+        </fieldset>
+    </form>
+
+  
+
+
+    <footer>
+        
+
+        <p>
+            Una web a tu disposicion para organizar tu evento, poder compartir contenido y que tus invitados tambien puedan compartir con vos
+            <br>
+            Que lo disfruten! a Festejar!
+        </p>   
+   
+       </footer>
+
+</body>   
+
+
+
+</html> 
