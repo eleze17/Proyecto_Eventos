@@ -34,7 +34,7 @@ ul{
 }
     
         body{
-            background-image:url(../Imagenes/fondo.jpg);
+            background-image:url(../imagenes/fondo.jpg);
             background-size:cover;
             min-height: 100vh;
         
