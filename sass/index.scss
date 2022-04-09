@@ -1,0 +1,125 @@
+
+        @import './partials/global';
+        @import './partials/header';
+    
+
+        section{ 
+           
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr .5fr;
+        grid-template-areas: "multimedia1   multimedia2   multimedia3     multimedia4"
+                             "h_fotos       h_book      h_music       h_evento";
+        
+        align-items: center;    
+       
+       
+        max-height: 65vh;   
+       
+    
+        #multimedia1{
+        grid-area: multimedia1;}
+
+        #multimedia2{
+            grid-area: multimedia2;
+        }
+
+        #multimedia3{
+            grid-area: multimedia3;
+        }
+            
+
+        #multimedia4{
+            grid-area: multimedia4;
+        }
+            
+
+        picture:hover{
+          background-image:url(../imagenes/fondo.gif);
+          border-radius: 50%;  
+          background-size: 50% 50%;
+        }
+
+        .h_fotos{grid-area: h_fotos;
+                height:min-content;  }
+        .h_book{grid-area: h_book;
+            height:min-content;}
+        .h_music{grid-area: h_music;
+                height:min-content;   }
+        .h_evento{grid-area: h_evento;
+                height:min-content; }
+            
+    
+        }
+        h3{
+            font-family: 'PT Serif', serif;
+            font-size: 2.5rem;
+            text-align: center;
+            color:rgb(8, 7, 5);
+            position: relative;
+            bottom: 55%;
+            
+        }
+
+
+        @media only screen and (max-width: 600px) {
+
+        section{ 
+           
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: .5fr .25fr .5fr .25fr;
+            grid-template-areas: "multimedia1   multimedia2"        
+                                 "h_fotos       h_book      "       
+                                 "multimedia3    multimedia4"
+                                 "h_music        h_evento";
+            align-items: center;    
+           
+           
+            min-height: 75vh;   
+           
+        
+            #multimedia1{
+            grid-area: multimedia1;}
+    
+            #multimedia2{
+                grid-area: multimedia2;
+            }
+    
+            #multimedia3{
+                grid-area: multimedia3;
+            }
+                
+    
+            #multimedia4{
+                grid-area: multimedia4;
+            }
+                
+            .h_fotos{grid-area: h_fotos;
+                    height:min-content;  }
+            .h_book{grid-area: h_book;
+                height:min-content;}
+            .h_music{grid-area: h_music;
+                    height:min-content;   }
+            .h_evento{grid-area: h_evento;
+                    height:min-content; }
+                
+        
+            }
+            h3{
+                font-family: 'PT Serif', serif;
+                font-size: 3.5rem;
+                text-align: center;
+                color:rgb(8, 7, 5);
+                position: relative;
+                bottom: 40%
+                
+            }
+        }
+
+        
+     @import './partials/footer';
+   
+
+
+

@@ -1,0 +1,174 @@
+html ::after,
+html ::before {
+  font-size: 62.5%;
+  height: 100vh;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+picture {
+  height: 50%;
+  width: auto; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+body {
+  height: 100%;
+  background-image: url(../imagenes/fondo.jpg);
+  background-size: cover;
+  min-height: 100vh; }
+  body ul {
+    list-style: none;
+    text-decoration: none; }
+    body ul a {
+      text-decoration: none; }
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 30%; } }
+
+header {
+  min-height: 10vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "navegador"; }
+  header .navegador {
+    grid-area: navegador;
+    display: flex;
+    height: 10rem;
+    width: 100%;
+    align-items: center; }
+    header .navegador ul {
+      width: 70%; }
+      header .navegador ul li {
+        font-family: 'PT Serif', serif;
+        color: purple;
+        margin-left: 2rem;
+        font-size: 2.3rem;
+        display: inline-block; }
+        header .navegador ul li a {
+          background-color: lightpink;
+          background-image: linear-gradient(to right, lightpink, white);
+          opacity: 50%; }
+    header .navegador .logo {
+      display: flex;
+      justify-content: flex-end;
+      width: 30%; }
+      header .navegador .logo .logo_img {
+        display: inline-block;
+        height: 7rem;
+        width: 7rem; }
+  header h1 {
+    font-family: 'PT Serif', serif;
+    font-size: 5rem;
+    margin: 0 auto;
+    text-align: center;
+    color: #080705;
+    background-image: url(../imagenes/fondo.gif); }
+
+@media only screen and (max-width: 600px) {
+  header .navegador {
+    min-height: 10rem; }
+    header .navegador ul {
+      height: 100%;
+      line-height: 40PX;
+      width: 80%; }
+    header .navegador .logo {
+      width: 20%;
+      height: 100%; } }
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr .5fr;
+  grid-template-areas: "multimedia1   multimedia2   multimedia3     multimedia4" "h_fotos       h_book      h_music       h_evento";
+  align-items: center;
+  max-height: 65vh; }
+  section #multimedia1 {
+    grid-area: multimedia1; }
+  section #multimedia2 {
+    grid-area: multimedia2; }
+  section #multimedia3 {
+    grid-area: multimedia3; }
+  section #multimedia4 {
+    grid-area: multimedia4; }
+  section picture:hover {
+    background-image: url(../imagenes/fondo.gif);
+    border-radius: 50%;
+    background-size: 50% 50%; }
+  section .h_fotos {
+    grid-area: h_fotos;
+    height: min-content; }
+  section .h_book {
+    grid-area: h_book;
+    height: min-content; }
+  section .h_music {
+    grid-area: h_music;
+    height: min-content; }
+  section .h_evento {
+    grid-area: h_evento;
+    height: min-content; }
+
+h3 {
+  font-family: 'PT Serif', serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #080705;
+  position: relative;
+  bottom: 55%; }
+
+@media only screen and (max-width: 600px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr .25fr .5fr .25fr;
+    grid-template-areas: "multimedia1   multimedia2"         "h_fotos       h_book      "        "multimedia3    multimedia4" "h_music        h_evento";
+    align-items: center;
+    min-height: 75vh; }
+    section #multimedia1 {
+      grid-area: multimedia1; }
+    section #multimedia2 {
+      grid-area: multimedia2; }
+    section #multimedia3 {
+      grid-area: multimedia3; }
+    section #multimedia4 {
+      grid-area: multimedia4; }
+    section .h_fotos {
+      grid-area: h_fotos;
+      height: min-content; }
+    section .h_book {
+      grid-area: h_book;
+      height: min-content; }
+    section .h_music {
+      grid-area: h_music;
+      height: min-content; }
+    section .h_evento {
+      grid-area: h_evento;
+      height: min-content; }
+  h3 {
+    font-family: 'PT Serif', serif;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #080705;
+    position: relative;
+    bottom: 40%; } }
+
+footer {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'PT Serif', serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #080705; }
+
+@media only screen and (max-width: 600px) {
+  footer {
+    font-size: 2.5rem; } }

@@ -1,0 +1,130 @@
+html ::after,
+html ::before {
+  font-size: 62.5%;
+  height: 100vh;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+picture {
+  height: 50%;
+  width: auto; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+body {
+  height: 100%;
+  background-image: url(../imagenes/fondo.jpg);
+  background-size: cover;
+  min-height: 100vh; }
+  body ul {
+    list-style: none;
+    text-decoration: none; }
+    body ul a {
+      text-decoration: none; }
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 30%; } }
+
+header {
+  min-height: 10vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "navegador"; }
+  header .navegador {
+    grid-area: navegador;
+    display: flex;
+    height: 10rem;
+    width: 100%;
+    align-items: center; }
+    header .navegador ul {
+      width: 70%; }
+      header .navegador ul li {
+        font-family: 'PT Serif', serif;
+        color: purple;
+        margin-left: 2rem;
+        font-size: 2.3rem;
+        display: inline-block; }
+        header .navegador ul li a {
+          background-color: lightpink;
+          background-image: linear-gradient(to right, lightpink, white);
+          opacity: 50%; }
+    header .navegador .logo {
+      display: flex;
+      justify-content: flex-end;
+      width: 30%; }
+      header .navegador .logo .logo_img {
+        display: inline-block;
+        height: 7rem;
+        width: 7rem; }
+  header h1 {
+    font-family: 'PT Serif', serif;
+    font-size: 5rem;
+    margin: 0 auto;
+    text-align: center;
+    color: #080705;
+    background-image: url(../imagenes/fondo.gif); }
+
+@media only screen and (max-width: 600px) {
+  header .navegador {
+    min-height: 10rem; }
+    header .navegador ul {
+      height: 100%;
+      line-height: 40PX;
+      width: 80%; }
+    header .navegador .logo {
+      width: 20%;
+      height: 100%; } }
+
+.contform {
+  display: flex;
+  flex-direction: column;
+  font-family: 'PT Serif', serif;
+  font-size: 2.5rem;
+  align-items: center; }
+
+.form-check {
+  width: 80px; }
+
+.col-12 {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  align-items: center; }
+  .col-12 button {
+    border-color: red;
+    background-color: antiquewhite;
+    margin: auto;
+    color: burlywood; }
+
+form {
+  font-family: 'PT Serif', serif;
+  font-size: 2.5rem; }
+
+.mb-3 {
+  width: 80%;
+  margin: auto; }
+
+input, button, select {
+  height: 50px; }
+
+footer {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'PT Serif', serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #080705; }
+
+@media only screen and (max-width: 600px) {
+  footer {
+    font-size: 2.5rem; } }

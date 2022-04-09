@@ -1,0 +1,31 @@
+{
+  "name": "proyectoweb",
+  "version": "1.0.0",
+  "description": "Proyecto Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --include-path scss sass/index.scss css/main.css",
+    "build-asistencia-sass": "node-sass --include-path scss sass/asistencia.scss css/asistencia.css",
+    "build-itinerario-sass": "node-sass --include-path scss sass/itinerario.scss css/itinerario.css",
+    "watch-sass": "nodemon -e scss -x  \" npm run build-sass\"",
+    "watch-asistencia-sass": "nodemon -e scss -x  \" npm run build-asistencia-sass\"",
+    "watch-itinerario-sass": "nodemon -e scss -x  \" npm run build-itinerario-sass\""
+ 
+ 
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eleze17/Proyecto_Eventos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eleze17/Proyecto_Eventos/issues"
+  },
+  "homepage": "https://github.com/eleze17/Proyecto_Eventos#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

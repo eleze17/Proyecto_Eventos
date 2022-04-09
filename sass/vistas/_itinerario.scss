@@ -1,0 +1,39 @@
+@import '../partials/global';
+@import '../partials/header';
+
+
+.gridcss{ 
+           
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 250px auto;
+    grid-template-areas: "plan"
+                         "tabla";
+                   
+ /*  align-items: center;    */
+
+        picture{
+        grid-area: plan;
+        height: 100%;
+        width: 50%;
+        margin: auto;
+        
+        
+        }
+   
+
+
+        table{
+            grid-area: tabla;
+font-family: 'PT Serif', serif;
+font-size: 2rem;
+margin: auto;
+background-size: cover;
+}
+.table{width:80%;
+}
+}
+
+
+
+@import '../partials/footer';
