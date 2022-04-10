@@ -18,25 +18,58 @@
    margin: auto; 
    align-items: center;
     button{
-        border-color:red ;
-        background-color: antiquewhite;
+        border-color:pink ;
+        background-color: white;
         margin: auto;
-        color: burlywood;
+        color: black;
 
     }    
 
+
 }
 
-form{ font-family: 'PT Serif', serif;
+.oculto {display: none;}
+.formulario ,.container-lg{ font-family: 'PT Serif', serif;
     font-size: 2.5rem;
-    
-     
-}
+    position: relative;
+    border:double;
+    border-width: 7px;
+    border-color: beige;
+  
+    }
+    legend{font-size: 2.7rem;}
+.form-control {font-size: 2.5rem;}    
+.form-select-lg{font-size: 2.5rem;}
 .mb-3{
    width: 80%;
    margin: auto; 
 }
 input,button,select {height: 50px}
+
+.confirm{display: none;}
+
+.btn-check:hover+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.hover, .btn-primary:hover, .show>.btn-primary.dropdown-toggle
+{
+    background-color: pink;
+    height: 50px;
+    width: 200px;
+    font-size: 2rem;
+    border-color: white;
+}
+
+.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle
+{   
+    .confirm{display: block;   
+     width: 60vw;
+     height: 60vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100% ;            }
+}   
+
+
 
 
 
