@@ -31,7 +31,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   html {
-    font-size: 30%; } }
+    font-size: 38%; } }
 
 header {
   min-height: 10vh;
@@ -51,7 +51,7 @@ header {
         font-family: 'PT Serif', serif;
         color: purple;
         margin-left: 2rem;
-        font-size: 2.3rem;
+        font-size: 2.5rem;
         display: inline-block; }
         header .navegador ul li a {
           background-color: lightpink;
@@ -70,16 +70,18 @@ header {
     font-size: 5rem;
     margin: 0 auto;
     text-align: center;
-    color: #080705;
+    color: #fcfbba;
     background-image: url(../imagenes/fondo.gif); }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   header .navegador {
     min-height: 10rem; }
     header .navegador ul {
       height: 100%;
       line-height: 40PX;
       width: 80%; }
+      header .navegador ul li {
+        font-size: 1.2rem; }
     header .navegador .logo {
       width: 20%;
       height: 100%; } }
@@ -144,8 +146,6 @@ input, button, select {
 
 .btn-check:active + .btn-primary .confirm, .btn-check:checked + .btn-primary .confirm, .btn-primary.active .confirm, .btn-primary:active .confirm, .show > .btn-primary.dropdown-toggle .confirm {
   display: block;
-  width: 60vw;
-  height: 60vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -159,7 +159,9 @@ footer {
   font-family: 'PT Serif', serif;
   font-size: 2rem;
   text-align: center;
-  color: #080705; }
+  color: #080705;
+  margin-top: 10px;
+  border-top: double; }
 
 @media only screen and (max-width: 600px) {
   footer {

@@ -25,15 +25,39 @@
 
         table{
             grid-area: tabla;
-font-family: 'PT Serif', serif;
-font-size: 2rem;
-margin: auto;
-background-size: cover;
+        font-family: 'PT Serif', serif;
+            font-size: 2rem;
+            margin: auto;
+        background-size: cover;
 }
-.table{width:80%;
-}
+        .table{width:80%;
+        }
 }
 
+    
+@media only screen and (min-width: 1000px) {
+        
+    
+      tr:hover{
+        transform:scale(1.1,1.2);
+        align-items: center;
+        padding-left: 20px;
+        position: relative;
+        left: 90px;
 
+    }
+      }
+    @media only screen and (max-width: 800px)
+      {
+        .gridcss{ 
+           
+            display: grid;
+            grid-template-columns: 1fr ;
+            grid-template-rows: auto auto;
+            grid-template-areas: "plan"
+                                 "tabla";
+            picture{ width: 100%;}
+      }
 
+    }
 @import '../partials/footer';

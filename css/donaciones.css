@@ -1,7 +1,7 @@
 html ::after,
 html ::before {
   font-size: 62.5%;
-  height: 100vh;
+  /* height: 100vh;*/
   max-width: 100vw;
   margin: 0;
   padding: 0;
@@ -86,81 +86,12 @@ header {
       width: 20%;
       height: 100%; } }
 
-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr .5fr;
-  grid-template-areas: "multimedia1   multimedia2   multimedia3     multimedia4" "h_fotos       h_book      h_music       h_evento";
+.container-fluid {
+  display: flex;
   align-items: center;
-  max-height: 65vh; }
-  section #multimedia1 {
-    grid-area: multimedia1; }
-  section #multimedia2 {
-    grid-area: multimedia2; }
-  section #multimedia3 {
-    grid-area: multimedia3; }
-  section #multimedia4 {
-    grid-area: multimedia4; }
-  section picture:hover {
-    background-image: url(../imagenes/fondo.gif);
-    border-radius: 50%;
-    background-size: 50% 50%; }
-  section .h_fotos {
-    grid-area: h_fotos;
-    height: min-content; }
-  section .h_book {
-    grid-area: h_book;
-    height: min-content; }
-  section .h_music {
-    grid-area: h_music;
-    height: min-content; }
-  section .h_evento {
-    grid-area: h_evento;
-    height: min-content; }
-
-h3 {
-  font-family: 'PT Serif', serif;
-  font-size: 2.5rem;
-  text-align: center;
-  color: #080705;
-  position: relative;
-  bottom: 55%; }
-
-@media only screen and (max-width: 600px) {
-  section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: .5fr .25fr .5fr .25fr;
-    grid-template-areas: "multimedia1   multimedia2"         "h_fotos       h_book      "        "multimedia3    multimedia4" "h_music        h_evento";
-    align-items: center;
-    min-height: 75vh; }
-    section #multimedia1 {
-      grid-area: multimedia1; }
-    section #multimedia2 {
-      grid-area: multimedia2; }
-    section #multimedia3 {
-      grid-area: multimedia3; }
-    section #multimedia4 {
-      grid-area: multimedia4; }
-    section .h_fotos {
-      grid-area: h_fotos;
-      height: min-content; }
-    section .h_book {
-      grid-area: h_book;
-      height: min-content; }
-    section .h_music {
-      grid-area: h_music;
-      height: min-content; }
-    section .h_evento {
-      grid-area: h_evento;
-      height: min-content; }
-  h3 {
-    font-family: 'PT Serif', serif;
-    font-size: 3.5rem;
-    text-align: center;
-    color: #080705;
-    position: relative;
-    bottom: 40%; } }
+  justify-content: center;
+  border: double;
+  width: 50%; }
 
 footer {
   min-height: 10vh;

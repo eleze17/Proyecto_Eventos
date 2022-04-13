@@ -1,0 +1,12 @@
+@import '../partials/global';
+@import '../partials/header';
+
+.container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: double;
+    width: 50%;
+
+}
+@import '../partials/footer';
