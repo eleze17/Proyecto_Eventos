@@ -40,8 +40,8 @@
              <H1>MI EVENTO</H1>
         </header>
 
-    
-       
+    <div class="contenedor-gral">
+    <div class="contenedor">
             <div class="container-fluid">
                 <H2 class="hayuda">Ayudar con </H2>
                 <select class="form-select" >
@@ -51,10 +51,21 @@
                     
                 </select>
             </div>
-            <div>
-
-
+            <div class="monto">
+                <span class="input-group-text fs-2">$
+                <input type="number" name="amount" class="form-control fs-2" step="1" id="btnradiof" min="100" aria-describedby="basic-addon3" value="100" required="" pattern="[0-9]">
+                </span>    
             </div>
+    </div>
+    <div class="contenedor-mensaje">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control text-nombre" placeholder="Nombre" aria-label="Nombre">
+            </div>    
+            <div class="mb-3">
+                <textarea class="form-control text-mensaje" id="exampleFormControlTextarea1" rows="10" placeholder="Deje su mensaje"></textarea>
+              </div>
+    </div>      
+    </div>
     <footer>
 
         <p>
