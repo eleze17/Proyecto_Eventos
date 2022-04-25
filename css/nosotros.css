@@ -86,94 +86,30 @@ header {
       width: 20%;
       height: 100%; } }
 
-.contenedor-gral {
-  min-height: 60vh;
-  color: violet; }
-
-.contenedor {
-  border: double;
-  width: 50%;
+.carousel-inner {
+  width: 60%;
   margin: auto;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 20vh;
-  border-color: violet; }
-
-.container-fluid, .monto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: double;
-  height: 200px;
-  font-family: 'PT Serif', serif;
-  font-size: 2.5rem;
-  border-color: violet; }
-  .container-fluid h2, .monto h2 {
-    font-family: 'PT Serif', serif;
-    font-size: 2.5rem;
-    color: #00668f;
-    font-weight: bold; }
-  .container-fluid .form-control, .monto .form-control {
-    border: none; }
-  .container-fluid .form-select, .container-fluid .fs-2, .monto .form-select, .monto .fs-2 {
-    height: 30%;
-    font-family: 'PT Serif', serif;
-    font-size: 2rem;
-    background-color: #eed5ea;
-    border-color: violet; }
-  .container-fluid .form-control, .monto .form-control {
+  height: 60vh; }
+  .carousel-inner .carousel-item, .carousel-inner .active {
     height: 100%;
-    border-color: violet; }
+    margin-right: 0;
+    opacity: 10%; }
 
-.contenedor-mensaje {
-  border: double;
-  width: 50%;
-  margin: 5px auto;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #f3bee1;
-  border-color: violet; }
-  .contenedor-mensaje .text-mensaje, .contenedor-mensaje .text-nombre {
-    border-color: violet;
-    background-color: #ffe4fb;
-    font-family: 'PT Serif', serif;
-    font-size: 2rem;
-    color: #331457; }
-  .contenedor-mensaje .mb-3 {
-    width: 100%;
-    min-height: 5vh; }
+.carousel-control-prev, .carousel-control-next {
+  color: black;
+  opacity: 10; }
+  .carousel-control-prev .carousel-control-prev-icon, .carousel-control-prev .carousel-control-next-icon, .carousel-control-next .carousel-control-prev-icon, .carousel-control-next .carousel-control-next-icon {
+    width: 150px;
+    height: 150px;
+    color: black; }
+    .carousel-control-prev .carousel-control-prev-icon .visually-hidden, .carousel-control-prev .carousel-control-next-icon .visually-hidden, .carousel-control-next .carousel-control-prev-icon .visually-hidden, .carousel-control-next .carousel-control-next-icon .visually-hidden {
+      color: black; }
 
-.monto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #331457; }
-  .monto .input-group-text {
-    width: 100%; }
-
-.btn-primary {
-  font-size: 2rem;
-  background-color: #f3bee1;
-  border-width: 0.3rem;
-  border-color: grey;
-  border-radius: 30px; }
-
-.btn-primary:hover {
-  background-color: #cf7fcf; }
-
-.form-select:focus {
-  box-shadow: none; }
-
-@media only screen and (max-width: 600px) {
-  .contenedor, .contenedor-mensaje {
-    border: double;
-    width: 90%;
-    border-color: violet; } }
+@media only screen and (max-width: 800px) {
+  .carousel-inner {
+    max-height: 350px; }
+  .d-block {
+    max-height: 300px; } }
 
 footer {
   min-height: 10vh;

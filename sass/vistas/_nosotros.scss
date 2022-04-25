@@ -1,0 +1,42 @@
+@import '../partials/global';
+@import '../partials/header';
+
+.carousel-inner{width: 60%;
+                margin: auto;
+                height: 60vh;
+                
+                .carousel-item,.active{
+                    height: 100%;
+                    margin-right: 0;
+                    opacity: 10%;
+                   }
+                
+            
+          
+                } 
+                .carousel-control-prev,.carousel-control-next{color: black;
+                    opacity: 10;
+                .carousel-control-prev-icon,.carousel-control-next-icon{
+                    width: 150px;
+                    height: 150px;
+                    color: black;
+                    .visually-hidden{color: black}
+                }
+                  
+                        
+                    }
+
+
+
+                    @media only screen and (max-width: 800px){
+                        
+                        .carousel-inner {
+                            max-height: 350px;
+                            
+                        }
+                   
+                        .d-block{
+                        max-height: 300px;}}
+
+
+@import '../partials/footer';

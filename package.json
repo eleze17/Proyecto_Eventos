@@ -9,10 +9,12 @@
     "build-asistencia-sass": "node-sass --include-path scss sass/asistencia.scss css/asistencia.css",
     "build-itinerario-sass": "node-sass --include-path scss sass/itinerario.scss css/itinerario.css",
     "build-donaciones-sass": "node-sass --include-path scss sass/donaciones.scss css/donaciones.css",
+    "build-nosotros-sass": "node-sass --include-path scss sass/nosotros.scss css/nosotros.css",
     "watch-sass": "nodemon -e scss -x  \" npm run build-sass\"",
     "watch-asistencia-sass": "nodemon -e scss -x  \" npm run build-asistencia-sass\"",
     "watch-itinerario-sass": "nodemon -e scss -x  \" npm run build-itinerario-sass\"",
-    "watch-donaciones-sass": "nodemon -e scss -x  \" npm run build-donaciones-sass\""
+    "watch-donaciones-sass": "nodemon -e scss -x  \" npm run build-donaciones-sass\"",
+    "watch-nosotros-sass": "nodemon -e scss -x  \" npm run build-nosotros-sass\""
  
  
   },

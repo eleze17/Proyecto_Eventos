@@ -3,15 +3,18 @@
 
 .contenedor-gral{
    min-height: 60vh;
+   color: violet;
 }
 
 .contenedor{border: double;
             width: 50%;  
             margin: auto;
+            border-radius: 10px;
         display: flex;
     align-items: center;
     justify-content: center; 
-min-height: 20vh; }
+min-height: 20vh; 
+border-color: violet;}
 .container-fluid, .monto{
     display: flex;
     align-items: center;
@@ -20,28 +23,40 @@ min-height: 20vh; }
     height: 200px;
     font-family: 'PT Serif', serif;
     font-size: 2.5rem;
-    color: rgb(51, 20, 87);
+    border-color: violet;
     h2{font-family: 'PT Serif', serif;
     font-size: 2.5rem;
     color: rgb(0, 102, 143);    
     font-weight: bold;
-}
+   
+
+    
+}   .form-control{border: none;}
     .form-select,.fs-2{ height: 30%;
         font-family: 'PT Serif', serif;
         font-size: 2rem;
-        color: rgb(51, 20, 87);    }
-        .form-control{height: 100%;}
+        background-color: rgb(238, 213, 234);
+       
+        border-color: violet;
+        }
+        .form-control{height: 100%; 
+            border-color: violet;}
 
 }
 .contenedor-mensaje{border: double;
     width: 50%;  
-    margin: auto;
+    margin: 5px auto;
+border-radius: 10px;
+
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+background-color: rgb(243, 190, 225);
+border-color: violet;
 .text-mensaje,.text-nombre{
-    
+    border-color: violet;    
+    background-color: rgb(255, 228, 251);
 font-family: 'PT Serif', serif;
         font-size: 2rem;
         color: rgb(51, 20, 87); }  
@@ -50,22 +65,37 @@ width: 100%;
 min-height: 5vh;
 
 
+
 }}
 
 .monto{display: flex;
     align-items: center;
     justify-content: center;
+    color: rgb(51, 20, 87);
     .input-group-text{
      width: 100%   
     }
 
 }
-
-
+.btn-primary{
+    font-size: 2rem;
+    background-color:  rgb(243, 190, 225);
+    border-width: 0.3rem;
+    border-color: grey;
+    border-radius: 30px;
+}
+.btn-primary:hover{
+    background-color: rgb(207, 127, 207);
+}
+.form-select:focus {
+    box-shadow: none;
+    
+}
 @media only screen and (max-width: 600px) {
     
 .contenedor, .contenedor-mensaje{border: double;
-    width: 90%;  }
+    width: 90%;
+    border-color: violet;  }
 
 
 }
